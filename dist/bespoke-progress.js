@@ -1,5 +1,5 @@
 /*!
- * bespoke-progress v0.0.0
+ * bespoke-progress v0.1.0
  * https://github.com/markdalgleish/bespoke-progress
  *
  * Copyright 2013, Mark Dalgleish
