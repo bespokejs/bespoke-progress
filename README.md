@@ -23,6 +23,23 @@ bespoke.horizontal.from('article', {
 });
 ```
 
+Two elements will be added to your presentation: a progress bar, and a container for it.
+
+### CSS
+
+The following classes are available on the generated progress elements.
+
+<table>
+   <tr>
+    <td><b>bespoke-progress-parent</b></td>
+    <td>The progress bar's parent element</td>
+   </tr>
+   <tr>
+    <td><b>bespoke-progress-bar</b></td>
+    <td>The progress bar</td>
+   </tr>
+</table>
+
 ## Package managers
 
 ### Bower
