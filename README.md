@@ -25,6 +25,16 @@ bespoke.horizontal.from('article', {
 
 Two elements will be added to your presentation: a progress bar, and a container for it.
 
+By default, the `.bespoke-progress-bar` element's width will be dynamically set to a percentage width.
+
+If you'd prefer a vertical progress bar, simply specify `'vertical'` as the plugin option:
+
+```js
+bespoke.vertical.from('article', {
+  progress: 'vertical'
+});
+```
+
 ### CSS
 
 The following classes are available on the generated progress elements.
