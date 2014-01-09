@@ -18,7 +18,7 @@ First, include both `bespoke.js` and `bespoke-progress.js` in your page.
 Then, simply include the plugin when instantiating your presentation.
 
 ```js
-bespoke.horizontal.from('article', {
+bespoke.from('article', {
   progress: true
 });
 ```
@@ -30,7 +30,7 @@ By default, the `.bespoke-progress-bar` element's width will be dynamically set 
 If you'd prefer a vertical progress bar, simply specify `'vertical'` as the plugin option:
 
 ```js
-bespoke.vertical.from('article', {
+bespoke.from('article', {
   progress: 'vertical'
 });
 ```
