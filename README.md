@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-progress.png?branch=master)](https://travis-ci.org/markdalgleish/bespoke-progress)
+[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-progress.png?branch=master)](https://travis-ci.org/markdalgleish/bespoke-progress) [![Coverage Status](https://coveralls.io/repos/markdalgleish/bespoke-progress/badge.png)](https://coveralls.io/r/markdalgleish/bespoke-progress)
 
 # bespoke-progress
 
@@ -13,14 +13,25 @@ Download the [production version][min] or the [development version][max], or use
 
 ## Usage
 
-First, include both `bespoke.js` and `bespoke-progress.js` in your page.
+This plugin is shipped in a [UMD format](https://github.com/umdjs/umd), meaning that it is available as a CommonJS/AMD module or browser global.
 
-Then, simply include the plugin when instantiating your presentation.
+For example, when using CommonJS modules:
 
 ```js
-bespoke.from('article', {
-  progress: true
-});
+var bespoke = require('bespoke'),
+  progress = require('bespoke-progress');
+
+bespoke.from('article', [
+  progress()
+]);
+```
+
+When using browser globals:
+
+```js
+bespoke.from('article', [
+  bespoke.plugins.progress()
+]);
 ```
 
 Two elements will be added to your presentation: a progress bar, and a container for it.
@@ -30,9 +41,9 @@ By default, the `.bespoke-progress-bar` element's width will be dynamically set 
 If you'd prefer a vertical progress bar, simply specify `'vertical'` as the plugin option:
 
 ```js
-bespoke.from('article', {
-  progress: 'vertical'
-});
+bespoke.from('article', [
+  progress('vertical')
+]);
 ```
 
 ### CSS
@@ -52,23 +63,16 @@ The following classes are available on the generated progress elements.
 
 ## Package managers
 
-### Bower
-
-```bash
-$ bower install bespoke-progress
-```
-
 ### npm
 
 ```bash
 $ npm install bespoke-progress
 ```
 
-The bespoke-progress npm package is designed for use with [browserify](http://browserify.org/), e.g.
+### Bower
 
-```js
-require('bespoke');
-require('bespoke-progress');
+```bash
+$ bower install bespoke-progress
 ```
 
 ## Credits

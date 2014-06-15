@@ -1,25 +1,17 @@
 /*!
  * bespoke-progress v0.1.0
- * https://github.com/markdalgleish/bespoke-progress
  *
- * Copyright 2013, Mark Dalgleish
+ * Copyright 2014, Mark Dalgleish
  * This content is released under the MIT license
+ * http://mit-license.org/markdalgleish
  */
 
-(function(bespoke) {
-
-  bespoke.plugins.progress = function (deck, options) {
+!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var o;"undefined"!=typeof window?o=window:"undefined"!=typeof global?o=global:"undefined"!=typeof self&&(o=self);var n=o;n=n.bespoke||(n.bespoke={}),n=n.plugins||(n.plugins={}),n.progress=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+module.exports = function(options) {
+  return function (deck) {
     var progressParent = document.createElement('div'),
       progressBar = document.createElement('div'),
-      prop = options === 'vertical' ?
-        'height' :
-        ['horizontal', true].indexOf(options) + 1 ?
-          'width' :
-          undefined;
-
-    if (!prop) {
-      return;
-    }
+      prop = options === 'vertical' ? 'height' : 'width';
 
     progressParent.className = 'bespoke-progress-parent';
     progressBar.className = 'bespoke-progress-bar';
@@ -30,5 +22,8 @@
       progressBar.style[prop] = (e.index * 100 / (deck.slides.length - 1)) + '%';
     });
   };
+};
 
-}(bespoke));
+},{}]},{},[1])
+(1)
+});

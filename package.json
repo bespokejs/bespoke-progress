@@ -8,40 +8,56 @@
     "name": "Mark Dalgleish",
     "url": "https://github.com/markdalgleish"
   },
-  "main": "./dist/bespoke-progress.js",
+  "main": "./lib/bespoke-progress.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/markdalgleish/bespoke-progress.git"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "gulp",
+    "coveralls": "gulp coveralls"
   },
   "peerDependencies": {
-    "bespoke": ">=0.3.0"
+    "bespoke": "^1.0.0"
   },
   "devDependencies": {
-    "grunt-cli": "~0.1.9",
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-jasmine": "~0.5.2",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-micro": "~0.1.0",
-    "bespoke": "~0.4.0",
-    "bespoke-keys": "~0.1.0",
-    "bespoke-touch": "~0.1.0"
+    "bespoke": "^1.0.0",
+    "bespoke-keys": "^1.0.0",
+    "bespoke-touch": "^1.0.0",
+    "browserify": "^4.1.5",
+    "function-bind": "^0.1.0",
+    "gulp": "^3.5.1",
+    "gulp-clean": "^0.2.4",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-header": "^1.0.2",
+    "gulp-jshint": "^1.3.4",
+    "gulp-karma": "0.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.0",
+    "istanbul": "^0.2.11",
+    "jshint-stylish": "^0.1.5",
+    "karma": "^0.10.9",
+    "karma-browserify": "^0.2.1",
+    "karma-coverage": "^0.1.5",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-script-launcher": "^0.1.0",
+    "lodash": "^2.4.1",
+    "requirejs": "^2.1.10",
+    "vinyl-buffer": "0.0.0",
+    "vinyl-map": "^1.0.1",
+    "vinyl-source-stream": "^0.1.1"
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "licenses": [
     {
-      "type": "MIT"
+      "type": "MIT",
+      "url": "http://mit-license.org/markdalgleish"
     }
   ],
   "keywords": [
-    "bespoke.js-plugin"
+    "bespoke-plugin"
   ]
 }

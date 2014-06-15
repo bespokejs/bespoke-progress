@@ -1,7 +1,8 @@
 {
   "name": "bespoke-progress",
   "version": "0.1.0",
+  "main": "./dist/bespoke-progress.js",
   "dependencies": {
-    "bespoke.js": ">=0.3.0"
+    "bespoke.js": "^1.0.0"
   }
 }
