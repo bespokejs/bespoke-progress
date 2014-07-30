@@ -1,6 +1,6 @@
 {
   "name": "bespoke-progress",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Progress Bar for Bespoke.js",
   "homepage": "https://github.com/markdalgleish/bespoke-progress",
   "bugs": "https://github.com/markdalgleish/bespoke-progress/issues",
